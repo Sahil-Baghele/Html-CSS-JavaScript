@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    width: 400px;
+    padding: 16px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-container input[type="text"], .login-container input[type="password"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-container input[type="submit"] {
+    cursor: pointer;
+    background-color: #333;
+    color: #ffffff;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #555;
+}
+</style>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="#">
+            <label for="username">Username</label>
+
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

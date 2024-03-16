@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      background-color: black;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 35px;
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    .head {
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    #services {
+      display: flex;
+      margin: 50px;
+      gap: 30px;
+    }
+
+    #services .box {
+      border: 2px solid red;
+      margin: 3px;
+      padding: 3px;
+      border-radius: 25px;
+      width: 600px;
+      height: 360px;
+      font-size: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #services .box:hover {
+      transform: scale(1.05);
+    }
+
+    /* @media screen and (max-width:1000px) {
+
+    #services{
+        display: flex;
+        flex-direction: column;
+    }
+    
+  } */
+
+    #services .box img {
+      justify-content: center;
+      margin-left: 40px;
+      margin-top: 10px;
+      width: 350px;
+      height: 250px;
+    }
+
+    #services .box .img2 {
+      justify-content: center;
+      margin-left: 33px;
+      margin-top: 10px;
+      width: 350px;
+      height: 250px;
+    }
+
+    #services .box .img3 {
+      justify-content: center;
+      margin-left: 35px;
+      margin-top: 10px;
+      width: 350px;
+      height: 250px;
+    }
+
+    .other {
+      display: flex;
+      margin: 50px;
+      gap: 30px;
+    }
+
+    .other .box {
+      border: 2px solid red;
+      margin: 3px;
+      padding: 3px;
+      border-radius: 25px;
+      width: 600px;
+      height: 360px;
+      font-size: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .other .box:hover {
+      transform: scale(1.05);
+    }
+
+    .other .box img {
+      justify-content: center;
+      margin-left: 40px;
+      margin-top: 10px;
+      width: 350px;
+      height: 250px;
+    }
+  </style>
+
+  <body>
+    <section class="services">
+      <h1 class="head">Order Now</h1>
+      <div id="services">
+        <div class="box">
+          <img
+            class="img"
+            src="https://media.istockphoto.com/id/844466808/photo/fast-carbohydrates-food.jpg?s=612x612&w=0&k=20&c=TePRGiZCIUqSjD7478nt59pn-PxZrp48Lpp7do8z8Uk="
+          />
+          <h1>Fast Food</h1>
+        </div>
+
+        <div class="box">
+          <img
+            class="img"
+            src="https://t4.ftcdn.net/jpg/00/49/38/95/360_F_49389597_6VboA8kRehV5naoKBLlvdeyf3Y8vclSZ.jpg"
+          />
+          <h1>Indian Food</h1>
+        </div>
+
+        <div class="box">
+          <img
+            class="img"
+            src="https://t3.ftcdn.net/jpg/01/94/55/60/360_F_194556024_JkmhLbe0d0fZNJFWrRhRA7SPSZ9yY84i.jpg"
+          />
+          <h1>Chinese Food</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="other">
+      <div class="box">
+        <img
+          src="https://www.willflyforfood.net/wp-content/uploads/2020/01/kisaburo-nojo2.jpg"
+        />
+        <h1>Japanese Food</h1>
+      </div>
+
+      <div class="box">
+        <img
+          src="https://ak-d.tripcdn.com/images/100g180000014r7jn1C64_Z_640_10000_R5.jpg_.webp?proc=autoorient&proc=source/trip"
+        />
+        <h1>European Food</h1>
+      </div>
+
+      <div class="box">
+        <img
+          src="https://media.istockphoto.com/id/1212417063/photo/table-full-of-food-for-family-dinner.jpg?s=612x612&w=0&k=20&c=VQw95DggeCDG_NHy5wHcg8BV7MhQmDDtLr-qxs4suiY="
+        />
+        <h1>Other</h1>
+      </div>
+    </section>
+  </body>
+</html>

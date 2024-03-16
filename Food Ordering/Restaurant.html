@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+</head>
+<link rel="stylesheet" href="" class="css">
+
+<link rel="stylesheet" media="screen and (max-width: 1150px)" href="phone.css">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* :root {
+        --navbar-height: 10px;
+    } */
+
+    h1 {
+
+        text-align: center;
+        padding: 20px 20px;
+        font-size: 35px;
+        text-decoration: underline;
+    }
+
+    #home {
+
+        display: flex;
+        flex-direction: column;
+        padding: 10px 200px;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+
+    }
+
+    #home h1 {
+
+        color: white;
+        text-align: center;
+    }
+
+    #home p {
+
+        color: white;
+        text-align: center;
+        font-size: 25px;
+
+    }
+
+    #home::before {
+
+        content: "";
+        position: absolute;
+        background-image: url('./Images/food2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+        width: 1473px;
+        z-index: -1;
+
+    }
+
+    .more{
+
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: red;
+    
+
+    }
+
+    #navbar {
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    /* #logo img {
+
+        height: 10px 10px;
+        margin: 10px 10px;
+        size: 500px 500px;
+      
+   } */
+
+
+    #navbar {
+
+        position: fixed;
+
+    }
+
+
+    #navbar ul {
+
+        display: flex;
+        border-radius: 30px;
+        margin-top: 5px;
+        border: 2px solid cyan;
+
+    }
+
+    #navbar::before {
+
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0;
+
+    }
+
+    #navbar ul {
+
+        background-color: black;
+        margin-left: 230px;
+        gap: 50px;
+
+    }
+
+    #navbar ul li {
+
+        color: cyan;
+        list-style: none;
+        font-size: 1.5rem;
+        border-radius: 50px;
+        text-decoration: underline;
+
+    }
+
+    #navbar ul li a {
+
+        font-size: 30px;
+        color: white;
+        display: block;
+        text-decoration: underline;
+        padding: 20px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+
+    }
+
+    #navbar ul li a:hover {
+
+        color: black;
+        background-color: white;
+
+    }
+
+    .primary {
+
+        font-size: 3rem;
+        padding: 20px;
+        margin-top: 100px;
+
+    }
+
+    p {
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    .btn2 {
+
+        display: inline-block;
+        position: absolute;
+        border: 2px solid red;
+        border-radius: 5px;
+        margin-left: 630px;
+        cursor: pointer;
+        font-size: 40px;
+        background-color: white;
+        color: black;
+        padding: 10px;
+
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 15px;
+        color: black;
+    }
+
+    .head {
+
+        color: black;
+        font-size: 50px;
+        padding-top: 300px;
+        text-align: center;
+        text-decoration: underline;
+        color: black;
+
+    }
+
+    .head2 {
+
+       color: black;
+       font-size: 50px;
+       text-align: center;
+       text-decoration: underline;
+       
+    }
+
+
+    .hoot {
+
+        text-decoration: underline;
+        padding: 25px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #services {
+
+        display: flex;
+        margin: 50px;
+        gap: 50px;
+
+    }
+
+    #services .box {
+
+        border: 2px solid red;
+        margin: 3px;
+        padding: 3px;
+        width: 600px;
+        height: 450px;
+        border-radius: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+
+    #services .box:hover{
+
+    transform: scale(1.05);
+       
+    }
+
+    #services .box img {
+
+        justify-content: center;
+        align-items: center;
+        margin-left: 28px;
+        margin-top: 10px;
+        width: 350px;
+        height: 250px;
+
+
+    }
+
+            
+    #services .box .img2 {
+
+       justify-content: center;
+       align-items: center;
+       margin-left: 15px;
+       margin-top: 10px;
+       width: 380px;
+       height: 250px;
+       
+    }
+
+    #services .box .img3 {
+
+       justify-content: center;
+       align-items: center;
+       margin-left: 15px;
+       margin-top: 10px;
+       width: 380px;
+       height: 250px;
+       
+       }
+
+   
+
+    #client {
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+
+    }
+
+    #client img{
+        
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        padding: 25px;
+
+    }
+
+    #client::before {
+
+        content: "";
+        position: absolute;
+        background-image: url('https://img.freepik.com/free-photo/top-view-dining-tables-without-food_23-2150157791.jpg?size=626&ext=jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        z-index: -1;
+        opacity: 80%;
+
+    }
+
+    .more2{
+
+   width: 300px;
+
+   height: 50px;
+   font-size: 40px;
+   text-align: center;
+   
+   border: 2px solid red;
+   
+
+    }
+
+    .more2:hover{
+
+ background-color: gray;
+
+
+}
+
+a{
+
+    color: black;
+}
+     
+</style>
+
+<body>
+
+    <nav id="navbar">
+        <div class="logo">
+            <img src="https://t4.ftcdn.net/jpg/04/35/01/73/360_F_435017346_o4bUhriCSEcPrJfEFJnmcIMpjlXweV5J.jpg"
+                width="70px" height="70px">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+
+            <li class="item"><a target="_blank" href="http://127.0.0.1:5500/Project%203/Services.html">Services</a></li>
+
+            <li class="item"><a target="_blank" href="http://127.0.0.1:5500/Project%203/About.html">About Us</a></li>
+
+            <li class="item"><a target="_blank" href="http://127.0.0.1:5500/Project%204/Contact.html">Contact Us</a></li>
+
+            <li class="item"><a target="_blank" href="http://127.0.0.1:5500/Project%203/Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+
+        <h1 class="primary">Welcome To Website</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, numquam enim, alias tenetur, quas maxime
+            oribus! Unde atque repellendus ratione facilis aliquam at assumenda!</p>
+
+       
+    </section>
+
+    <div class="btn">
+          <a target="_blank" href="http://127.0.0.1:5500/Project%203/Order.html">
+        <button class="btn2">Order Now</button>
+          </a>
+    </div>
+
+
+    <section class="services">
+
+        <h1 class="head">Our Services</h1>
+        <div id="services">
+
+            <div class="box">
+                <img src="./Images/dish.jpg">
+                <h1>Food Ordering</h1>
+                <h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias culpa asperiores 
+                    pariatur nostrum, autem cum omnis necessitatibus cumque eum saepe, itaque
+                     laborum nihil obcaecati quisquam dolore perspiciatis? Voluptatem, ut esse.
+                </h2>
+            </div>
+
+            <div class="box">
+                <img class="img2" src="./Images/dish 2.jpg">
+                <h1>Food Catering</h1>
+                <h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, adipisci illo! 
+                    In fugiat consequatur ea veniam incidunt molestias, fugit dolorum quas 
+                    asperiores perspiciatis, tempora aliquid! Repellat nisi voluptatum unde optio.
+                </h2>
+            </div>
+
+            <div class="box">
+                <img class="img3"  src="./Images/delivery.jpg">
+                <h1>Food Delivery</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eos sint ea
+                    hic expedita
+                    eligendi facilis distinctio praesentium suscipit saepe et dolorem totam, atque molestiae voluptate
+                    atus voluptatum quibusdam veritatis et ducimus expedita quisquam perspiciatis eveniet!
+                </h2>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="more">
+
+       <button class="more2"><a target="_blank" href="http://127.0.0.1:5500/Project%203/Services.html"> More</a></button>
+
+    </div>
+
+    <h1 class="head2">
+        Our Clients
+    </h1>
+
+    <section id="client">
+       
+
+        <div id="clients">
+
+            <div class="cilent-item"></div>
+            <img
+                src="https://media.gettyimages.com/id/458617717/photo/apple-inc-logo.jpg?s=612x612&w=0&k=20&c=lU7yIfP9C4FTsndeAlnznkhZ0R8lsSb86mwutSc6Re4=">
+
+            <img
+                src="https://www.cnet.com/a/img/resize/8c9c75bf6a3e30310bff0cc4c5e5b0e1c2e6a582/hub/2012/08/23/b031a3e4-f0e7-11e2-8c7c-d4ae52e62bcc/Microsoft_new_logo.jpg?auto=webp&width=1200">
+
+            <img src="https://wallpapercave.com/wp/wp3544527.jpg">
+
+            <img src="https://1000logos.net/wp-content/uploads/2016/11/New-Google-Logo-497x500.jpg">
+        </div>
+    </section>
+
+    
+    </form>
+
+      </Div>
+
+
+    </secttion>
+
+</body>
+
+</html>
