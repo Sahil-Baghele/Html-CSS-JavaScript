@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+
+        /* background-image: url('https://t4.ftcdn.net/jpg/04/55/28/91/360_F_455289151_K3eZziBHP0QPGedXjR3Am3y0HWwv9NII.jpg'); */
+
+        /* background-image: url('https://media.istockphoto.com/id/1350117834/photo/modern-gym-interior-with-new-fitness-equipment.jpg?s=612x612&w=0&k=20&c=t0fxY9riSiP7fOwJUWS2zjYNuoFazPiHvqec_zGUkiY=');  */
+        
+        /* background-image: url('https://img.freepik.com/premium-photo/image-gym-fitness-bodybuilding-concept-mixed-media_392761-3969.jpg?size=626&ext=jpg'); */
+       
+    background-color: black; 
+
+    }
+
+    a{
+
+   color: white;
+
+    }
+    
+.head{
+
+color: white;
+text-decoration: underline;
+text-align: center;
+font-size: 50px
+
+}
+
+    h1{
+
+color: white;
+text-decoration: underline;
+text-align: center;
+font-size: 40px;
+
+    }
+
+
+
+    h2{
+
+  color: white;
+
+    }
+
+    
+
+    #services {
+
+display: flex;
+margin: 50px;
+
+}
+
+#services .box {
+
+border: 2px solid red;
+margin: 3px;
+padding: 3px;
+border-radius: 25px;
+height: 490px;
+font-size: 10px;
+
+}
+
+#services .box img {
+
+align-items: center;
+margin-left: 40px;
+width: 350px;
+height: 250px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+
+    #services .box:hover{
+
+    transform: scale(1.05);
+       
+    }
+
+
+
+    .left {  
+
+        color: white;
+        position: absolute;
+       cursor: pointer;
+        top: 25px;
+        margin: auto;
+        background-color: black;
+        border: 3px solid red;
+        text-decoration: none;
+        font-size: 25px;
+       
+        text-align: center;
+
+       }
+
+       .left:hover{
+
+        background-color: grey;
+       }
+
+    .mid {
+
+        display: block;
+        background-color: lightcyan;
+        width: 60%;
+        margin: 25px auto;
+        border: 4px solid red;
+        border-radius: 50px;
+
+    }
+
+    .right {
+
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        display: inline-block;
+
+
+    }
+
+    .navbar {
+
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 35px;
+      
+
+    }
+
+    .navbar li a {
+
+        text-decoration: none;
+        color: black;
+        padding: 25px 25px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+
+        text-decoration: underline;
+        color: black;
+
+    }
+
+    .btn {
+
+        margin: auto;
+        background-color: black;
+        color: white;
+        padding: 15px 10px;
+        border: 2px solid red;
+        cursor: pointer;
+        font-size: 20px;
+        
+
+    }
+
+    .btn:hover {
+
+        background-color: gray;
+
+    }
+
+
+    /* .Gym {
+        border: 15px solid cyan;
+        margin: auto;
+        padding: 80px 80px;
+        display: block;
+        font-size: 25px;
+        background-color: whitesmoke;
+        width: 50%;
+    } */
+
+    .btn2 {
+
+        text-align: center;
+        text-decoration: wavy;
+        font-size: 40px;
+        margin: auto;
+        padding: 8px;
+        background-color: yellow;
+        color: whitesmoke;
+
+    }
+
+    .logo {
+
+        top: 0%;
+        position: absolute;
+
+
+    }
+
+    .more2{
+
+      border: 2px solid red;
+      color: white;
+      background-color: black;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      text-align: center;
+      width: 200px;
+      height: 50px;
+      margin-left: 660px;
+
+
+    }
+
+    .more2:hover{
+
+   background-color: gray;
+
+    }
+
+</style>
+
+<body>
+
+    <header class="Header">
+
+        <div class="left">
+
+        </div>
+        <div class="mid">
+
+            <ul class="navbar">
+
+                <li><a href="#" class="active">Home</a></li>
+
+                <li><a target="_blank" href="http://127.0.0.1:5500/Project%202/About.html">About Us</a></li>
+               
+                <li><a target="_blank" href="http://127.0.0.1:5500/Project%202/Services.html">Services </a></li>
+                
+                <li><a target="_blank" href="http://127.0.0.1:5500/Project%202/Contact.html">Contact </a></li>
+
+                   <li><a target="_blank" href="http://127.0.0.1:5500/Project%202/Reg.html">Login</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="right">
+
+            <button class="btn"><a target="_blank" href="http://127.0.0.1:5500/Project%202/E-mail.html">Email Us</a></button>
+            
+            <button class="btn"><a target="_blank" href="http://127.0.0.1:5500/Project%202/Contact.html">Contact Us</a> </button>
+
+        </div>
+
+        <!-- <div class="left">
+            
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/Project%203/Login.html">Login</a></li>
+                </ul>
+        </div> -->
+
+        <!-- <div class="Gym">
+            <Form action="">
+                Name : <input type="text" placeholder="Enter Your Name">
+                <br>
+                <br>
+                Age : <input type="text" placeholder="Enter Your Age">
+                <br>
+                <br>
+                Gender :<input type="radio" name="Gender">
+                Male<input type="radio" name="Gender">
+                Female<input type="radio" name="Gender">
+                Other
+                <br>
+                <br>
+                Email : <input type="email" placeholder="Enter Your Email">
+                <br>
+                <br>
+                <input type="submit" placeholder="Submit Now">
+
+            </Form>
+        </div> -->
+
+        <section class="services">
+
+            <h1 class="head">Our Services</h1>
+
+            <div id="services">
+
+    
+                <div class="box">
+                    <img src="https://img.freepik.com/free-photo/beautiful-brunette-female-sportswear-doing-lunge-with-barbell-fitness-club-gym_613910-18595.jpg?size=626&ext=jpg">
+                    <h1>Profession Training</h1>
+                    <h2>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati 
+                        repellat quibusdam eveniet. Voluptatem ipsum, blanditiis animi quibusdam inventore neque natus
+                         fugit iusto quam magnam hic quia laboriosam! Natus, assumenda.
+                    </h2>
+
+                </div>
+    
+                <div class="box">
+
+                    <img src="https://media.istockphoto.com/id/1313539661/photo/portrait-of-a-female-fitness-instructor.jpg?s=612x612&w=0&k=20&c=8KjhLDFX6GFSLvcoCT1NQCBtfOyhiWCuPL5YP5FG9ak=">
+                    <h1>Experinced Trainers</h1>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi corporis, 
+                        ratione reiciendis ipsa, veniam dolores voluptatem voluptates hic ut delectus? 
+                        Ipsum eos voluptatem aliquid. Eveniet veritatis ea illo accusamus.
+                    </h2>
+
+                </div>
+    
+                <div class="box">
+
+                    <img src="https://img.freepik.com/premium-photo/image-gym-fitness-bodybuilding-concept-mixed-media_392761-3969.jpg?size=626&ext=jpg">
+                    <h1>Modern Machines</h1>
+                    <h2>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nostrum 
+                        necessitatibus consequatur, fugit quibusdam porro. Quaerat culpa assumenda id 
+                        animi autem quis,
+                         tempore nam ea possimus dicta voluptates obcaecati aspernatur.
+                    </h2>
+
+                </div>
+    
+            </div>
+            
+        </section>
+
+        </section>
+
+
+    </header>
+
+     <div class="more">
+
+     <button class="more2"><a target="_blank" href="http://127.0.0.1:5500/Project%202/Services.html"> More</a></button>
+
+
+     </div>
+
+
+</body>
+
+</html>
