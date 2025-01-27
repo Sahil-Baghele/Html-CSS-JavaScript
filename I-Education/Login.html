@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login/Signup Form</title>
+    
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* body {
+    background-image: url("https://i.etsystatic.com/31610274/c/1030/1030/0/104/il/4e4bf6/3761634753/il_600x600.3761634753_fny6.jpg");
+  } */
+
+.container{
+    width: 100%;
+    height: 100vh;
+     background: linear-gradient(to right bottom, #ebf4f5, #b5c6e0); 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.form-box{
+    width: 50%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding:20px 28px;
+    margin-inline: 20px;
+}
+
+.form-box header h1{
+    text-align: center;
+    color: #5851e3;
+}
+
+.form-box form{
+    margin-block: 30px;
+}
+
+input{
+    width:100%;
+    padding: 18px 16px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #a3a3a331;
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+input[type="text"]{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #767676;
+    font-size: 14px;
+}
+
+input[type="button"]{
+    margin-block: 24px;
+    background-color: #5851e3;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+input[type="button"]:hover{
+    background-color: #10449a;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a img{
+    max-height: 40px;
+      margin-inline: 10px;  
+      justify-content: center;
+      align-items:center ;
+}
+
+.signup{
+    text-align: center;
+    margin-block: 20px;
+}
+
+.signup a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #5851e3;
+}
+
+.signup a:hover{
+    color: #10449a;
+    text-decoration: underline 2px;
+    text-underline-offset: 3.5px;
+}
+
+/* CSS to achieve responsiveness */
+@media screen and (max-width:700px) {
+    .form-box{
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <header>
+                <h1 id="title">Login</h1>
+            </header>
+            <form action="">
+                <input type="text" placeholder="Name" id="nameField">
+                <input type="email" placeholder="Username or Email address">
+
+                <input type="password" placeholder="Password">
+                <a href="">Forgot Password?</a>
+                <input type="button" value="Login" id="signinBtn">
+
+                <div class="links">
+                    <a href="#"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-white-f.png" alt=""></a>
+                    <a href="#"><img src="https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-450x450.jpg" alt=""></a>
+                    <!-- <a class="linked" href="#"><img src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo-500x281.jpg" alt=""></a> -->
+                </div>
+                <p class="signup">Not a member?<a href="#" id="signupBtn">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+     <script>
+        const title = document.getElementById('title');
+const nameField = document.getElementById('nameField');
+const signinBtn = document.getElementById('signinBtn');
+const signupBtn = document.getElementById('signupBtn');
+
+signupBtn.onclick = function(){
+    title.innerHTML = "Sign Up";
+    nameField.style.display = "block";
+}
+signinBtn.onclick = function(){
+    title.innerHTML = "Login";
+    nameField.style.display = "none";
+}
+
+    </script> 
+</body>
+</html>
